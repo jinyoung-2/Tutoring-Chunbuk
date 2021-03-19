@@ -2,12 +2,12 @@
 #include<stdlib.h>
 int main(void)
 {
-	int rows, columns;
+	int rows, columns;  //За,ї­
 	scanf_s("%d %d", &rows, &columns);
-	int** arr = (int **)malloc(sizeof(int*) * columns);
-	for (int i = 0; i < columns; i++)
-		arr[i] = (int*)malloc(sizeof(int) * rows);
-	for (int i = 0; i < columns; i++)
+	int** arr = (int **)malloc(sizeof(int*) * rows);
+	for (int i = 0; i < rows; i++)
+		arr[i] = (int*)malloc(sizeof(int) * columns);
+	for (int i = 0; i < rows; i++)
 		free(arr[i]);
 	free(arr);
 	return 0;
