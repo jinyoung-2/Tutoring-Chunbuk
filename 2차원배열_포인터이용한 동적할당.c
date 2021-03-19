@@ -2,7 +2,7 @@
 #include<stdlib.h>
 int main(void)
 {
-	int rows, columns;  //За,ї­
+	int rows, columns;
 	scanf_s("%d %d", &rows, &columns);
 	int** arr = (int **)malloc(sizeof(int*) * rows);
 	for (int i = 0; i < rows; i++)
